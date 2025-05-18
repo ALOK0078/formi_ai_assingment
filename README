@@ -8,7 +8,7 @@ A stateful, multi-purpose chatbot for Barbeque Nation that handles new bookings,
 
 ### 1. Clone & Install Dependencies
 
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/ALOK0078/formi_ai_assingment.git
 cd your-repo
 python -m venv venv
 
