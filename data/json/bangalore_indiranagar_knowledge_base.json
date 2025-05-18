@@ -1,0 +1,137 @@
+[
+  {
+    "day": "Monday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Monday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Tuesday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Tuesday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Wednesday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Wednesday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Thursday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Thursday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Friday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Friday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Saturday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Saturday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Sunday",
+    "pax": "2+1",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Sunday",
+    "pax": "3 & Above",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Special",
+    "pax": "All",
+    "lunch_slot_1": "",
+    "lunch_slot_2": "",
+    "dinner_slot_1": "",
+    "dinner_slot_2": "",
+    "notes": "2nd Oct outlet closed for Gandhi Jayanthi. Suggest nearby location."
+  }
+]

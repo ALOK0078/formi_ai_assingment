@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+pydantic
+python-dotenv
+python-statemachine
+pandas
+fuzzywuzzy
+python-Levenshtein
+gspread
+google-auth
+requests

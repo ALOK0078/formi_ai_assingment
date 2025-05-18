@@ -1,0 +1,139 @@
+# Barbeque Nation Chatbot System
+
+A stateful, multi-purpose chatbot for Barbeque Nation that handles new bookings, modifications, cancellations, and FAQs, with all actions logged to Google Sheets.
+
+---
+
+## Project Setup
+
+### 1. Clone & Install Dependencies
+
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+python -m venv venv
+
+On Windows:
+venv\Scripts\activate
+
+On Mac/Linux:
+source venv/bin/activate
+pip install -r requirements.txt
+
+
+### 2. Google Sheets API Setup
+
+- Go to [Google Cloud Console](https://console.cloud.google.com/)
+- Create a project, enable **Google Sheets API** and **Google Drive API**
+- Create a **Service Account**, download the JSON credentials as `credentials.json` and place it in your project root.
+- Share your target Google Sheet with the service account email (you’ll find it in `credentials.json` under `client_email`).
+
+
+### 4. Google Sheet Link
+
+All logs are stored in this Google Sheet:  
+[🔗  Google Sheet Link Here](https://docs.google.com/spreadsheets/d/1Wlv1yokHUcjgnzX07FMhYS7RWUNCbpWGqVgCVdIy0M8/edit?usp=sharing)
+
+## Key Files Explained
+
+### `app/knowledge_base.py`
+- Loads and validates data from `properties.csv` and `faqs.csv`
+- Provides city and property validation (with fuzzy matching)
+- Answers FAQs using similarity scoring
+- Matches FAQs using similarity scoring with fuzzy token sort logic
+- Returns structured property data for downstream use in conversations
+### `app/state_machine.py`
+- Implements a finite state machine for the conversation
+- Handles all flows: booking, modification, cancellation, FAQ
+- Transitions between states like COLLECT_CITY, CONFIRM_BOOKING, etc.
+- Uses Jinja templates for prompts
+- Calls `log_to_sheet` for every action (booking, update, cancel)
+- Ensures all data is logged, never deleted
+- Handles graceful error fallback and ensures all data interactions are non-destructive and traceable
+### `app/google_sheet.py`
+- Handles authentication and all Google Sheets operations
+- Logs new bookings, updates modifications, marks cancellations
+- Ensures proper headers and error handling
+### `Knowledge Base & Data Folder Overview`
+The data/ folder is the central repository powering the chatbot’s understanding of Barbeque Nation outlets, city-wise operations, and FAQs. It is structured to support both general and property-specific knowledge for accurate and contextual user assistance.
+📄 properties.csv
+Lists all supported cities and their Barbeque Nation outlets
+Contains key details: property names, addresses, city associations
+Enables the chatbot to:
+Validate city and property names (with fuzzy matching)
+Route user queries to the correct outlet
+📄 faqs.csv
+Stores frequently asked questions and their mapped answers
+Questions may be generic or city-specific
+Enables the chatbot to:
+Handle queries related to timings, offers, parking, and more
+Answer using similarity scoring based on user input
+📁 Property-Specific Knowledge Files (.json / .csv)
+Contains rich knowledge for specific key outlets
+(e.g., Delhi Janakpuri, Delhi Connaught Place, Bangalore Indiranagar, Koramangala)
+Extracted from official PDFs or internal resources
+Includes details like:
+✅ Operational hours, session timings, last entry
+---
+
+## 🗺️ Conversation Flow
+
+[🔗 Flow Diagram link in ExcaliDraw ]( https://excalidraw.com/#json=KxbtBB0IiWlYP1g00LfDz,QOY8sro3gG0EkFaPpz9ySA)
+
+1. **Collect City:**  
+   User is prompted for the city.  
+   → If valid, proceed; else, re-prompt.
+
+2. **Collect Property:**  
+   User is prompted for the property in that city.  
+   → If valid, proceed; else, re-prompt.
+
+3. **Main Menu (4 options):**  
+   - 1️⃣ New Booking  
+   - 2️⃣ Modify Booking  
+   - 3️⃣ Cancel Booking  
+   - 4️⃣ FAQ
+
+4. **Action Flows:**  
+   - **New Booking:** Collects name, phone, date, time, guests, confirms, and logs.
+   - **Modification:**  
+     - Collects city/property/phone to find booking  
+     - Prompts for new date/time/guests  
+     - Logs the updated info (old booking is preserved, new info is logged)
+   - **Cancellation:**  
+     - Collects city/property/phone to find booking  
+     - Confirms cancellation  
+     - Marks booking as "Cancelled" in the sheet (does not delete)
+   - **FAQ:**  
+     - User asks a question  
+     - Bot answers from the FAQ knowledge base
+     
+
+---
+
+## 📝 How to Run Locally
+uvicorn app.main:app --reload //run this command on your terminal
+
+- Use [Postman](https://www.postman.com/) or Swagger UI (`http://127.0.0.1:8000/docs`) to interact with `/chat`.
+
+
+## 🛠️ Troubleshooting
+
+- **Sheet not updating?**
+  - Make sure you shared your sheet with the service account email.
+  - Check `credentials.json` location and permissions.
+- **API errors?**
+  - Ensure Google Sheets and Drive APIs are enabled in your Google Cloud project.
+- **Import errors?**
+  - Activate your virtual environment and check `requirements.txt`.
+
+---
+
+## 🙌 Credits
+
+- [Google Sheets API Documentation](https://developers.google.com/sheets/api)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Jinja2](https://jinja.palletsprojects.com/)
+
+
+
+

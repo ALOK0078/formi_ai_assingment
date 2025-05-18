@@ -1,0 +1,5 @@
+{% if state == State.CONFIRM_CANCELLATION %}
+Confirm cancellation for {{ context.property_name }} on {{ context.booking_date }}?
+{% else %}
+Confirm modification to {{ context.booking_date }} at {{ context.booking_time }}?
+{% endif %}

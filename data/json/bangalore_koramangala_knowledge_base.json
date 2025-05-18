@@ -1,0 +1,74 @@
+[
+  {
+    "day": "Monday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Tuesday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Wednesday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Thursday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Friday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Saturday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Sunday",
+    "pax": "All",
+    "lunch_slot_1": "Flexible",
+    "lunch_slot_2": "Take till last entry",
+    "dinner_slot_1": "Flexible",
+    "dinner_slot_2": "Take till last entry",
+    "notes": ""
+  },
+  {
+    "day": "Special",
+    "pax": "All",
+    "lunch_slot_1": "",
+    "lunch_slot_2": "",
+    "dinner_slot_1": "",
+    "dinner_slot_2": "",
+    "notes": "No special closure info available."
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "day": "Monday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Tuesday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Wednesday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Thursday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Friday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Saturday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Sunday",
+    "lunch_start": "12:00 pm",
+    "lunch_end": "4:00 pm",
+    "dinner_start": "6:30 pm",
+    "dinner_end": "11:00 pm",
+    "notes": ""
+  },
+  {
+    "day": "Special",
+    "lunch_start": "",
+    "lunch_end": "",
+    "dinner_start": "",
+    "dinner_end": "",
+    "notes": "No special closure info available."
+  }
+]
